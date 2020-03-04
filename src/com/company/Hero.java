@@ -9,23 +9,30 @@ public class Hero {
         this.health = health;
         this.damage = damage;
         this.superpower = superpower;
-        System.out.println(
-                        "---------------------------------------------------\n" +
-                        "Здоровье героя: " + this.health + "\n" +
-                        "Атака героя: " + this.damage + "\n" +
-                        "Суперспособность героя: " + this.superpower + "\n" +
-                        "---------------------------------------------------");
     }
 
     public Hero(int health, int damage) {
         this.health = health;
         this.damage = damage;
+    }
+
+    public void printInfo() {
         System.out.println(
-                        "---------------------------------------------------\n" +
-                        "Здоровье героя: " + this.health + "\n" +
-                        "Атака героя: " + this.damage + "\n" +
+                "---------------------------------------------------\n" +
+                        "Здоровье героя: " + getHealth() + "\n" +
+                        "Атака героя: " + getDamage() + "\n" +
+                        "Суперспособность героя: " + getSuperpower() + "\n" +
                         "---------------------------------------------------");
     }
+
+    public void secondPrintInfo() {
+        System.out.println(
+                "---------------------------------------------------\n" +
+                        "Здоровье героя: " + getHealth() + "\n" +
+                        "Атака героя: " + getDamage() + "\n" +
+                        "---------------------------------------------------");
+    }
+
 
     public int getHealth() {
         return health;

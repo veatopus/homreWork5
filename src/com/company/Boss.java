@@ -9,13 +9,16 @@ public class Boss {
         this.health = health;
         this.damage = damage;
         this.typeOfProtection = typeOfProtection;
+
+    }
+
+    public void printInfo() {
         System.out.println(
                 "---------------------------------------------------\n" +
-                        "Здоровье босса: " + this.health + "\n" +
-                        "Атака босса: " + this.damage + "\n" +
-                        "Тип сопротевления : " + this.typeOfProtection + "\n" +
+                        "Здоровье босса: " + getHealth() + "\n" +
+                        "Атака босса: " + getDamage() + "\n" +
+                        "Тип сопротевления : " + getTypeOfProtection() + "\n" +
                         "---------------------------------------------------");
-
     }
 
     public int getHealth() {
